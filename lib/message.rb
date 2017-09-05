@@ -15,6 +15,11 @@ module Messages
     The first is two units long and the
     second is three units long.
     The grid has A1 at the top left and D4 at the bottom right.
+    For example:
+     A1,A2,A3,A4,
+     B1,B2,B3,B4,
+     C1,C2,C3,C4,
+     D1,D2,D3,D4
     ===========================================================
     Enter the squares for the two-unit ship:\n\n"
   end
@@ -35,7 +40,7 @@ module Messages
   end
 
   def invalid_response
-    "That is not a valid response"    
+    "That is not a valid response!"    
   end
   
 end

@@ -1,4 +1,6 @@
+require 'pry'
 require './message'
+require './battlefield'
 
 
 class BattleShip
@@ -15,12 +17,15 @@ class BattleShip
 
     if input == "p" || input == "play"
       display(play_instructions)
+      
+
     elsif input == "i" || input == "instructions"
       display(instructions)
     elsif input == "q" || input == "quit"
       display(quit)
     else
       display(invalid_response)
+      run_game
     end
   end
   
