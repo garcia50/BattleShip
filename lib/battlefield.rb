@@ -22,8 +22,8 @@ class BattleField
   end
 end
 
-field = BattleField.new
-puts field.game_board
+# field = BattleField.new
+# puts field.game_board
 
 
 

@@ -1,6 +1,6 @@
 require 'pry'
-require './message'
-require './battlefield'
+require './lib/message'
+require './lib/battlefield'
 
 
 class BattleShip
@@ -17,8 +17,6 @@ class BattleShip
 
     if input == "p" || input == "play"
       display(play_instructions)
-      
-
     elsif input == "i" || input == "instructions"
       display(instructions)
     elsif input == "q" || input == "quit"
@@ -31,5 +29,5 @@ class BattleShip
   
 end
 
-game = BattleShip.new
-game.run_game
+# game = BattleShip.new
+# game.run_game

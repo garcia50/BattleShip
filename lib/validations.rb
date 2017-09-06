@@ -1,6 +1,5 @@
 require 'pry'
 
-
 module Validations
 
   def keys
@@ -47,5 +46,5 @@ module Validations
 
 end
 
-include Validations
-puts validate_cruiser_positions
+# include Validations
+# puts validate_cruiser_positions

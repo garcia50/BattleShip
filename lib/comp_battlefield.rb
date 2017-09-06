@@ -1,6 +1,6 @@
 require 'pry'
-require './ships'
-require './validations'
+require './lib/ships'
+require './lib/validations'
 
 class CompBattlefield
   include Validations 
@@ -25,6 +25,7 @@ class CompBattlefield
     else
       full_coordinate = cruiser_position.insert(1,cruiser_position[0][0] + cruiser_position[0][1].next)
       checks_overlap(full_coordinate.flatten)
+    end  
   end
 
   def checks_overlap(full_coordinate)
@@ -32,9 +33,9 @@ class CompBattlefield
       comp_coordinate_cruiser
     else
       @ships.cruiser = full_coordinate
+    end
   end
-
 end
 
-comp = CompBattlefield.new
-comp.comp_coordinates_destroyer
+# comp = CompBattlefield.new
+# comp.comp_coordinates_destroyer
