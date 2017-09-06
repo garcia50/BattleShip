@@ -1,5 +1,5 @@
 require 'pry'
-class BattleField
+class Battlefield
   attr_accessor :field
 
   def initialize 

@@ -8,10 +8,6 @@ module Validations
     letters.map {|letter| number.map {|num| letter + num}}.flatten
   end
 
-  def overlap
-    
-  end
-
   def horizontal_destroyer
     keys.map do |key|
       [] << key << key[0] + key[1].next unless key[1] == "4"
