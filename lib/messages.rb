@@ -42,5 +42,12 @@ module Messages
   def invalid_response
     "That is not a valid response!"    
   end
+
+  def invalid_coordinate_assignment
+    "Follow the rules soldier!"
+  end
   
+  def congested_waters
+    "These waters are unavailable! Chose again:"    
+  end
 end

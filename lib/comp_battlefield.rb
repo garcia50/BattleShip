@@ -1,4 +1,3 @@
-require 'pry'
 require './lib/ships'
 require './lib/validations'
 require './lib/battlefield'

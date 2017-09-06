@@ -1,33 +1,62 @@
 require 'pry'
 require './lib/message'
 require './lib/battlefield'
-
+require './lib/comp_battlefield'
+require './lib/user_battlefield'
 
 class BattleShip
   include Messages 
 
-  def display(output)
+  def initialize
+    @user_battlefield = Userbattlefield.new
+    @comp_battlefield = CompBattlefield.new
+  end
+
+  def present(output)
     puts output    
   end
 
-  def run_game
-    display(welcome)
-    display(introduction)
-    input = gets.chomp.downcase
+  def user_input
+    gets.chomp.strip  
+  end
 
+  def run_game
+    present(welcome)
+    present(introduction)
+    input = gets.chomp.downcase
     if input == "p" || input == "play"
-      display(play_instructions)
+      present(play_instructions)
+      gameplay
     elsif input == "i" || input == "instructions"
-      display(instructions)
+      present(instructions)
     elsif input == "q" || input == "quit"
-      display(quit)
+      present(quit)
     else
-      display(invalid_response)
+      present(invalid_response)
       run_game
     end
+  end
+
+  def gameplay
+    @comp_battlefield.comp_coordinates_destroyer 
+    @comp_battlefield.comp_coordinates_cruiser
+
   end
   
 end
 
 # game = BattleShip.new
 # game.run_game
+
+
+
+
+
+
+
+
+
+
+
+
+
