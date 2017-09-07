@@ -38,7 +38,7 @@ class CompBattlefield
   end
 
   def checks_overlap(full_coordinate)
-    if @ships.destroyer.any? { |position| full_coordinate.include?(position)}
+    if @ships.destroyer.any?{ |position| full_coordinate.include?(position)}
       comp_coordinates_cruiser
     else
       @ships.cruiser = full_coordinate

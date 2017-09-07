@@ -2,10 +2,12 @@ require 'pry'
 require './lib/ships'
 require './lib/validations'
 require './lib/battlefield'
+require './lib/messages'
 
 class UserBattlefield
   attr_accessor :ships, :battlefield
   include Validations
+  include Messages
 
   def initialize
     @ships = Ships.new
@@ -47,11 +49,11 @@ class UserBattlefield
       present(invalid_coordinate_assignment)
       user_coordinates_cruiser(user_input)
     else
-      cruiser_coordinates(coordinate.split(" ").sort)
+      add_middle_cruiser_coordinates(coordinate.split(" ").sort)
     end
   end
 
-  def cruiser_coordinates(coordinates)
+  def add_middle_cruiser_coordinates(coordinates)
     if vertical_cruiser.include?(coordinates)
       full_coordinates = coordinates.insert(1,[coordinates[0][0].next + coordinates[0][1]])
       checks_overlap(full_coordinates.flatten)
@@ -62,7 +64,7 @@ class UserBattlefield
   end
 
   def checks_overlap(full_coordinates)
-    if full_coordinates.any?{|a| ships.destroyer.include?(a)}
+    if full_coordinates.any?{ |a| ships.destroyer.include?(a) }
       present(congested_waters)
       user_coordinates_cruiser(user_input)
     else

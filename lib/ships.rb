@@ -1,4 +1,3 @@
-require 'pry'
 class Ships
   attr_accessor :destroyer, :cruiser
 
@@ -6,6 +5,5 @@ class Ships
     @destroyer = []
     @cruiser = []
   end
-
 end
 

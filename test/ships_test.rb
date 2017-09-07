@@ -8,4 +8,10 @@ class ShipsTest < Minitest::Test
     assert_instance_of Ships, Ships.new
   end
 
+  def test_if_destroyer_saves_coordinates
+    ships = Ships.new
+    
+    assert_equal ["A1", "A2"], ships.destroyer = ["A1", "A2"]
+  end
+
 end

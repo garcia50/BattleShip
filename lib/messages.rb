@@ -48,6 +48,71 @@ module Messages
   end
   
   def congested_waters
-    "These waters are unavailable! Chose again:"    
+    "These waters are busy! Choose again:"    
+  end
+
+  def two_unit_ship_coordinates
+    "Enter the squares for the two-unit ship:"
+  end
+
+  def three_unit_ship_coordinates
+    "Enter the squares for the three-unit ship:"
+  end
+
+  def shoot
+    "Take your best shot!"    
+  end
+
+  def hit
+    "That's a direct hit!"
+  end
+
+  def miss
+    "You missed!"
+  end
+
+  def stay_on_the_grid
+    "Stay on the grid soldier!"    
+  end
+
+  def no_repeat
+    "You already hit this coordinate, shot somewhere else!"
+  end
+
+  def user_won(shots, time)
+    "It took you #{shots} and #{time}"
+  end
+
+  def user_lost(shots, time)
+    "It took you #{shots} and #{time}"
   end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

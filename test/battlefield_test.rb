@@ -8,9 +8,12 @@ class BattlefieldTest < Minitest::Test
     assert_instance_of BattleField, BattleField.new
   end
 
-  # def test_
+  def test_if_key_in_field_exist
+    field = BattleField.new
     
-  # end
+    assert field.field["A1"]
+    refute field.field["Z1"]
+  end
 
 
 
