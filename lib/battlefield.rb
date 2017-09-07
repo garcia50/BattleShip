@@ -11,11 +11,11 @@ class Battlefield
 
   def game_board
   "    ===========
-    .  1 2 3 4
-    A  #{field["A1"][1]} #{field["A2"][1]} #{field["A3"][1]} #{field["A4"][1]}
-    B  #{field["B1"][1]} #{field["B2"][1]} #{field["B3"][1]} #{field["B4"][1]}
-    C  #{field["C1"][1]} #{field["C2"][1]} #{field["C3"][1]} #{field["C4"][1]}
-    D  #{field["D1"][1]} #{field["D2"][1]} #{field["D3"][1]} #{field["D4"][1]}
+     . 1 2 3 4
+     A #{field["A1"][1]} #{field["A2"][1]} #{field["A3"][1]} #{field["A4"][1]}
+     B #{field["B1"][1]} #{field["B2"][1]} #{field["B3"][1]} #{field["B4"][1]}
+     C #{field["C1"][1]} #{field["C2"][1]} #{field["C3"][1]} #{field["C4"][1]}
+     D #{field["D1"][1]} #{field["D2"][1]} #{field["D3"][1]} #{field["D4"][1]}
     ==========="
   end
 end

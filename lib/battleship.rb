@@ -78,10 +78,11 @@ class BattleShip
     if @user_battlefield.battlefield.field[shot][1] != " "
       comp_shooting
     elsif @user_battlefield.ships.destroyer.include?(shot) || @user_battlefield.ships.cruiser.include?(shot)
+      present(comp_hit)
       @user_battlefield.battlefield.field[shot][1] = "H"
       game_over(@comp_battlefield)
     else
-      present(miss)
+      present(comp_miss)
       @user_battlefield.battlefield.field[shot][1] = "M"
       present(@user_battlefield.battlefield.game_board)
       user_shooting

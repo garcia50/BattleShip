@@ -74,10 +74,22 @@ class MessagesTest < Minitest::Test
     assert dummy.hit
   end
 
+  def test_comp_hit_message
+    dummy = Dummy.new
+
+    assert dummy.comp_hit
+  end
+
   def test_miss_message
     dummy = Dummy.new
 
     assert dummy.miss
+  end
+
+  def test_comp_miss_message
+    dummy = Dummy.new
+
+    assert dummy.comp_miss
   end
 
   def test_stay_on_the_grid_message

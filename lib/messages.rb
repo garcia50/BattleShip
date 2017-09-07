@@ -36,10 +36,10 @@ module Messages
   end
 
   def quit
-    "You're missing out on what could've been the greatest time of your life!"
+    "You forgot to bring your sea legs didn't you!"
   end
 
-  def invalid_response
+  def invalid_responseC3
     "That is not a valid response!"    
   end
 
@@ -67,8 +67,16 @@ module Messages
     "That's a direct hit!"
   end
 
+  def comp_hit
+    "We're hit!"
+  end
+
   def miss
     "You missed!"
+  end
+
+  def comp_miss
+    "Computer missed!"
   end
 
   def stay_on_the_grid
