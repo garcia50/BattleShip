@@ -1,4 +1,3 @@
-require 'pry'
 require './lib/ships'
 require './lib/validations'
 require './lib/battlefield'
@@ -79,9 +78,3 @@ class UserBattlefield
     end
   end
 end
-
-
-
-
-
-

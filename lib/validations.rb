@@ -37,8 +37,4 @@ module Validations
   def validate_cruiser_positions
     horizontal_cruiser.compact.concat(vertical_cruiser.compact)
   end
-
 end
-
-# include Validations
-# puts validate_cruiser_positions

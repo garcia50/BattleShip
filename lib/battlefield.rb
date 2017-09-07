@@ -19,14 +19,3 @@ class Battlefield
     ==========="
   end
 end
-
-# field = BattleField.new
-# puts field.game_board
-
-
-
-# Ships cannot wrap around the board
-# Ships cannot overlap
-# Ships can be laid either horizontally or vertically
-# Coordinates must correspond to the first and last units of the ship. 
-# (IE: You can’t place a two unit ship at “A1 A3”)

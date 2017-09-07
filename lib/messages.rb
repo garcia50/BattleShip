@@ -36,7 +36,7 @@ module Messages
   end
 
   def quit
-    "You're missing out on what could be the greatest time of your life!"
+    "You're missing out on what could've been the greatest time of your life!"
   end
 
   def invalid_response
@@ -44,7 +44,7 @@ module Messages
   end
 
   def invalid_coordinate_assignment
-    "Follow the rules soldier!"
+    "Follow the rules soldier! Ex: A1 A2"
   end
   
   def congested_waters
@@ -87,32 +87,3 @@ module Messages
     "Mayday! Mayday! We lost! #{shots} shots wasn't enough to win within #{time} time!"
   end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

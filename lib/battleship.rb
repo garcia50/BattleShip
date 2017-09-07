@@ -1,4 +1,3 @@
-require 'pry'
 require './lib/battlefield'
 require './lib/comp_battlefield'
 require './lib/user_battlefield'
@@ -34,6 +33,7 @@ class BattleShip
       gameplay
     elsif input == "i" || input == "instructions"
       present(instructions)
+      run_game
     elsif input == "q" || input == "quit"
       present(quit)
     else
@@ -49,7 +49,6 @@ class BattleShip
     @user_battlefield.user_coordinates_destroyer(user_input) 
     present(three_unit_ship_coordinates)
     @user_battlefield.user_coordinates_cruiser(user_input)  
-    binding.pry
     user_shooting
   end
 
@@ -129,27 +128,4 @@ class BattleShip
     end
     shots
   end
-
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
