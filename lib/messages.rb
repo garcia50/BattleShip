@@ -76,15 +76,15 @@ module Messages
   end
 
   def no_repeat
-    "You already hit this coordinate, shot somewhere else!"
+    "You already hit this coordinate, shoot somewhere else!"
   end
 
   def user_won(shots, time)
-    "It took you #{shots} and #{time}"
+    "Victory! It only took us #{shots} shots and #{time} to win!"
   end
 
   def user_lost(shots, time)
-    "It took you #{shots} and #{time}"
+    "Mayday! Mayday! We lost! #{shots} shots wasn't enough to win within #{time} time!"
   end
 end
 

@@ -8,4 +8,7 @@ class MessagesTest < Minitest::Test
     assert_instance_of Dummy, Dummy.new
   end
 
+  def test
+    
+  end
 end

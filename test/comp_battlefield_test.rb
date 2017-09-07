@@ -5,6 +5,7 @@ require './lib/validations'
 
 class CompBattlefieldTest < Minitest::Test
   include Validations
+  
   def test_if_compbattlefield_class_exist
     assert_instance_of CompBattlefield, CompBattlefield.new
   end
