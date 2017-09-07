@@ -14,4 +14,9 @@ class ShipsTest < Minitest::Test
     assert_equal ["A1", "A2"], ships.destroyer = ["A1", "A2"]
   end
 
+  def test_if_cruiser_saves_coordinates
+    ships = Ships.new
+    
+    assert_equal ["A1", "A3"], ships.cruiser = ["A1", "A3"]
+  end
 end
